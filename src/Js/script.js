@@ -10,8 +10,7 @@ async function buscarConselho() {
 
 buscarConselho();
 
-
 document.getElementById('atualizar-conselho').addEventListener('click', () => {
     buscarConselho();
-} )
+})
 
