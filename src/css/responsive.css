@@ -2,11 +2,23 @@
     .cartao{
         max-width: 390px;
     }
+
+    .cartao .conselho-descricao{
+        text-align: center;
+        font-size: 19px;
+        padding: 19px;
+    }
 }
 
 @media screen and (max-width:395px) {
     .cartao{
         max-width: 380px;
+    }
+
+    .cartao .conselho-descricao{
+        text-align: center;
+        font-size: 18px;
+        padding: 18px;
     }
 }
 
@@ -14,11 +26,23 @@
     .cartao{
         max-width: 340px;
     }
+
+    .cartao .conselho-descricao{
+        text-align: center;
+        font-size: 17px;
+        padding: 17px;
+    }
 }
 
 @media screen and (max-width:320px) {
     .cartao{
         max-width: 290px;
+    }
+
+    .cartao .conselho-descricao{
+        text-align: center;
+        font-size: 16px;
+        padding: 16px;
     }
 }
 
