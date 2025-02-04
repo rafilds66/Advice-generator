@@ -6,7 +6,6 @@ async function buscarConselho() {
     const conselho = data.slip.advice;
     document.getElementById('conselho-id').textContent = `# ${id}`;
     document.getElementById('descricao').textContent = conselho;
-    console.log(`ID: ${id}, Conselho: ${conselho}`);
 }
 
 buscarConselho();
