@@ -1,8 +1,18 @@
-const botao = document.querySelectorAll(".atualizar-conselho");
-const conselho = document.querySelectorAll(".conselho-id");
-const descricao = document.querySelectorAll(".conselho-descricao");
-
-async function pegarDadosApi(){
-    
+async function buscarConselho() {
+    const url = 'https://api.adviceslip.com/advice';
+    const response = await fetch(url);
+    const data = await response.json();
+    const id = data.slip.id;
+    const conselho = data.slip.advice;
+    document.getElementById('conselho-id').textContent = `# ${id}`;
+    document.getElementById('descricao').textContent = conselho;
+    console.log(`ID: ${id}, Conselho: ${conselho}`);
 }
+
+buscarConselho();
+
+
+document.getElementById('atualizar-conselho').addEventListener('click', () => {
+    buscarConselho();
+} )
 
