@@ -4,6 +4,12 @@
     }
 }
 
+@media screen and (max-width:395px) {
+    .cartao{
+        max-width: 380px;
+    }
+}
+
 @media screen and (max-width:375px) {
     .cartao{
         max-width: 340px;
